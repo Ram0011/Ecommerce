@@ -24,7 +24,16 @@ const Header = () => {
     };
 
     return (
-        <div>
+        <div
+            style={{
+                position: "sticky",
+                top: 0,
+                zIndex: 1000,
+                backgroundColor: "#fff", // Add your desired background color
+                // Add padding as needed
+                borderBottom: "1px solid #ccc", // Add border if needed
+            }}
+        >
             <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top navbar-inverse">
                 <div
                     className="container-fluid"
