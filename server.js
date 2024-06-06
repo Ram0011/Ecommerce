@@ -20,8 +20,7 @@ app.use(morgan("dev"));
 
 //config cors
 const corsOptions = {
-    origin: "http://localhost:5173",
-    origin: "https://ram-ecommerce.vercel.app",
+    origin: ["http://localhost:5173", "https://ram-ecommerce.vercel.app"],
     credentials: true,
 };
 app.use(cors(corsOptions));
