@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar css */
+.navbar {
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    /* text-transform: uppercase; */
+    box-shadow: 0 8px 6px -6px gray;
+    --webkit-box-shadow: 0 8px 6px -6px gray;
+    --moz-box-shadow: 0 8px 6px -6px gray;
+    border-bottom: solid gray !important;
+}
+.shop {
+    font-size: 2rem;
+    display: flex;
+    font-family: Playfair Display, serif;
+    font-weight: 800;
+    text-decoration: none;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: medium;
+    font-style: italic;
+}
+
+.nav-link:focus {
+    border-bottom: 1px solid gray;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid gray;
+}
+
+/* Footer */
+.footer {
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    background-color: #020623;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #ffbfba;
+    border-bottom: 1px solid #ffbfba;
+}
+
+/* Register page */
+.register {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+}
+
+.form-label {
+    font-family: Playfair Display, serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 60vw;
+}
+@media (max-width: 576px) {
+    .form-control {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-control {
+        width: 50vw;
+    }
+}
+
+/* Product link */
+.product-link {
+    text-decoration: none !important;
+    color: black;
+}
+
+.truncate-two-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; /* Adjust based on your text's line height */
+    max-height: 3em; /* Adjust based on line-height and number of lines */
+}
+
+.truncate-three-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; /* Adjust based on your text's line height */
+    max-height: 4.5em; /* Adjust based on line-height and number of lines */
+}
+
+/* Responsive product element */
+.responsive-element {
+    width: 100%; /* Default for small screens */
+}
+
+@media (min-width: 768px) {
+    .responsive-element {
+        width: 45%; /* Medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .responsive-element {
+        width: 30%; /* Large screens */
+    }
+}
+
+/* box shadow */
+.card-hover-shadow {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-hover-shadow:hover {
+    box-shadow: rgba(88, 88, 88, 0.12) 0px 2px 2px 0px,
+        rgba(75, 75, 75, 0.12) 2px 0px 2px 0px;
+}
+
+@media (max-width: 768px) {
+    .search-input-container {
+        display: none;
+    }
+}
