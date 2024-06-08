@@ -82,7 +82,10 @@ const ProductDetails = () => {
                         {product.description}
                     </p>
                     <p style={{ fontWeight: "bold", fontFamily: "serif" }}>
-                        ₹ {product.price}
+                        {product.price.toLocaleString("en-In", {
+                            style: "currency",
+                            currency: "INR",
+                        })}
                     </p>
                     <button
                         className="btn btn-success mt-1 mb-5"
